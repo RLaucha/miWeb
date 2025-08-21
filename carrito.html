@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pádel Pro - Carrito</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="brand">
+        <img src="img/logo.png.png" alt="Pádel Pro Logo">
+        <div>
+          <h1>Pádel Pro</h1>
+          <div class="small">Carrito</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html" class="cart-btn">🛒 Carrito <span class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Tu carrito</h2>
+
+    <div class="card">
+      <div id="carrito-lista" class="cart-list"></div>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:16px">
+        <div>
+          <button id="vaciar-btn" class="btn secondary">Vaciar carrito</button>
+        </div>
+        <div style="text-align:right">
+          <div class="small">Total aproximado</div>
+          <div style="font-size:20px;font-weight:800">$<span id="carrito-total">0</span></div>
+          <div style="margin-top:10px">
+            <a href="checkout.html" class="btn">Ir a pagar</a>
+            <a href="tienda.html" class="btn secondary" style="margin-left:8px">Seguir comprando</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pádel Pro - Contacto</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="brand">
+        <img src="img/logo.png.png" alt="Pádel Pro Logo">
+        <div>
+          <h1>Pádel Pro</h1>
+          <div class="small">Contacto</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html" class="cart-btn">🛒 Carrito <span class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Escribinos</h2>
+
+    <div class="card" style="max-width:700px">
+      <form onsubmit="event.preventDefault(); alert('Mensaje enviado (simulado)');">
+        <div class="form-field">
+          <label>Nombre</label>
+          <input required />
+        </div>
+        <div class="form-field">
+          <label>Email</label>
+          <input type="email" required />
+        </div>
+        <div class="form-field">
+          <label>Consulta</label>
+          <textarea required></textarea>
+        </div>
+        <div style="display:flex;gap:8px">
+          <button class="btn" type="submit">Enviar</button>
+          <a href="index.html" class="btn secondary">Volver</a>
+        </div>
+      </form>
+    </div>
+
+    <section style="margin-top:18px;display:flex;gap:18px;flex-wrap:wrap">
+      <div class="card" style="min-width:220px">
+        <h4>Horario</h4>
+        <p class="small">Lun a Vie · 9:00 - 18:00</p>
+      </div>
+      <div class="card" style="min-width:220px">
+        <h4>Redes</h4>
+        <p class="small">Instagram: @padelpro · Whatsapp: +54 9 11 0000 0000</p>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

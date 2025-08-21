@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pádel Pro - Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="brand">
+        <img src="img/logo.png.png" alt="Pádel Pro Logo">
+        <div>
+          <h1>Pádel Pro</h1>
+          <div class="small">Checkout</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html" class="cart-btn">🛒 Carrito <span class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Finalizar compra</h2>
+
+    <div class="grid-2">
+      <div id="checkout-main">
+        <form id="checkout-form" class="card" style="display:flex;flex-direction:column;gap:12px">
+          <div class="form-field">
+            <label>Nombre completo</label>
+            <input id="c-nombre" required />
+          </div>
+
+          <div class="form-field">
+            <label>Email</label>
+            <input id="c-email" type="email" required />
+          </div>
+
+          <div class="form-field">
+            <label>Teléfono (opcional)</label>
+            <input id="c-phone" />
+          </div>
+
+          <div class="form-field">
+            <label>Dirección de envío</label>
+            <input id="c-direccion" />
+          </div>
+
+          <div class="form-field">
+            <label>Observaciones</label>
+            <textarea id="c-note"></textarea>
+          </div>
+
+          <div style="display:flex;gap:8px">
+            <button class="btn" type="submit">Enviar pedido</button>
+            <a href="carrito.html" class="btn secondary">Volver al carrito</a>
+          </div>
+        </form>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Resumen</h3>
+          <div id="resumen-pedido" style="margin-top:12px"></div>
+          <div style="margin-top:12px;display:flex;justify-content:space-between;align-items:center">
+            <div class="small">TOTAL</div>
+            <div style="font-weight:800">$<span id="resumen-total">0</span></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+  </main>
+</body>
+</html>
